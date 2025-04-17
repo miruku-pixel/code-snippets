@@ -8,10 +8,20 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-fit px-6 py-3 bg-white/10 border border-white/20 backdrop-blur-lg shadow-md rounded-full">
-      <div className="flex items-center justify-between space-x-8 text-white font-medium">
+    <nav
+      className="fixed top-4 left-1/2 transform -translate-x-1/2 
+                    z-50 w-fit px-6 py-3 bg-white/10 border 
+                    border-white/20 backdrop-blur-lg shadow-md rounded-full"
+    >
+      <div
+        className="flex items-center justify-between 
+                      space-x-8 text-white font-medium"
+      >
         {/* Logo */}
-        <div className="text-yellow-300 font-bold font-stretch-50% text-lg whitespace-nowrap">
+        <div
+          className="text-black font-bold font-stretch-50% 
+                        text-lg whitespace-nowrap"
+        >
           Snippets Showcase
         </div>
 
@@ -24,7 +34,10 @@ const Navbar = () => {
               className="relative group hover:text-yellow-200 transition duration-300"
             >
               {item.name}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
+              <span
+                className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-200 
+                              transition-all duration-300 group-hover:w-full"
+              ></span>
             </a>
           ))}
         </div>
